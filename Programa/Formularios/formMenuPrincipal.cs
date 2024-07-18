@@ -22,5 +22,11 @@ namespace Programa.Formularios
             var abrir = new formCadastroClientes();
             abrir.ShowDialog();
         }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var abrir = new formCadastrarNovoAcessoUsuario();
+            abrir.ShowDialog();
+        }
     }
 }

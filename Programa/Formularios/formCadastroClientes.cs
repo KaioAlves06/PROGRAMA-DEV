@@ -28,11 +28,6 @@ namespace Programa.Formularios
 
         }
 
-        private void txtCpfeCnpj_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtN_TextChanged(object sender, EventArgs e)
         {
 
@@ -102,14 +97,14 @@ namespace Programa.Formularios
         {
             // Defensivas, caso o usuario não preencher algum campo
 
-            if (string.IsNullOrEmpty(cboTipo.Text))
+            if (cboTipo.SelectedIndex == 0)
             {
                 MessageBox.Show("Informe se o cliente é: Pessoa Fisica ou Juridica", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (string.IsNullOrEmpty(txtNome.Text))
             {
-                MessageBox.Show("Infor o nome do cliente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Informe o nome do cliente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (txtCpfeCnpj.Text == "")
@@ -117,20 +112,35 @@ namespace Programa.Formularios
                 MessageBox.Show("Informe o CPF ou CNPJ do cliente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (mskTelefone.Text.Length >3 && mskCelular.Text == "")
+            if (txtCpfeCnpj.Text.Length < 11)
+            {
+                MessageBox.Show("Para CPF informe os 11 digitos ou 14 digitos para CNPJ", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (mskTelefone.Text.Length < 14 && mskCelular.Text.Length < 15)
             {
                 MessageBox.Show("Infome pelo menos 1 numero para contato ", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (txtEmail.Text == "" )
-            {
-                MessageBox.Show("O endereço de e-mail não foi informado", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            if (txtEndereco.Text == "" && txtN.Text == "" && txtBairro.Text == "" && txtMunicipio.Text == "" && mskCep.Text == "" && cboUf.Text == "")
+
+            if (txtEndereco.Text == "" || txtN.Text == "" || txtBairro.Text == "" || txtMunicipio.Text == "" || mskCep.Text.Length < 9 || cboUf.SelectedIndex == 0)
             {
                 MessageBox.Show("Verifique os campos de endereços se estão devidamente preenchido", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (txtEmail.Text == "")
+            {
+                if (MessageBox.Show("Deseja informar o e-mail ? ", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    txtEmail.BackColor = Color.Yellow;
+                    return;
+                }
+
+                // se o e-mail estiver vázio, vai perguntar se o usuário deseja informar, se ele clicar em sim vai retornar "MessageBoxButtons.YesNo,
+                // MessageBoxIcon.Question) == DialogResult.Yes)"
+
+            }
+
 
             // Caso esteja tudo ok, ele passara e cadastra o cliente no banco
 
@@ -150,6 +160,24 @@ namespace Programa.Formularios
             }
         }
 
+        private void txtCpfeCnpj_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite apenas dígitos (0-9), tecla Backspace e teclas de controle (como Ctrl+C, Ctrl+V)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ignora o caractere digitado
+            }
+        }
 
+        private void formCadastroClientes_Load(object sender, EventArgs e)
+        {
+            cboTipo.SelectedIndex = 0;
+            cboUf.SelectedIndex = 0;
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.White;
+        }
     }
 }

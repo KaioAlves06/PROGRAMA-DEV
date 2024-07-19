@@ -75,8 +75,8 @@
             this.txtNome.BackColor = System.Drawing.Color.White;
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(224, 49);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNome.Location = new System.Drawing.Point(221, 49);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(292, 23);
             this.txtNome.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(224, 32);
+            this.label1.Location = new System.Drawing.Point(221, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 16);
@@ -101,13 +101,13 @@
             this.txtCpfeCnpj.BackColor = System.Drawing.Color.White;
             this.txtCpfeCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCpfeCnpj.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpfeCnpj.Location = new System.Drawing.Point(546, 49);
-            this.txtCpfeCnpj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCpfeCnpj.Location = new System.Drawing.Point(543, 49);
+            this.txtCpfeCnpj.Margin = new System.Windows.Forms.Padding(2);
             this.txtCpfeCnpj.MaxLength = 14;
             this.txtCpfeCnpj.Name = "txtCpfeCnpj";
             this.txtCpfeCnpj.Size = new System.Drawing.Size(233, 23);
             this.txtCpfeCnpj.TabIndex = 3;
-            this.txtCpfeCnpj.TextChanged += new System.EventHandler(this.txtCpfeCnpj_TextChanged);
+            this.txtCpfeCnpj.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCpfeCnpj_KeyPress);
             // 
             // label2
             // 
@@ -115,7 +115,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(543, 32);
+            this.label2.Location = new System.Drawing.Point(540, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 16);
@@ -126,14 +126,16 @@
             // cboTipo
             // 
             this.cboTipo.BackColor = System.Drawing.Color.White;
+            this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cboTipo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Items.AddRange(new object[] {
+            "Selecione",
             "Fisica ",
             "Juridica"});
-            this.cboTipo.Location = new System.Drawing.Point(31, 49);
-            this.cboTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTipo.Location = new System.Drawing.Point(28, 49);
+            this.cboTipo.Margin = new System.Windows.Forms.Padding(2);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(167, 23);
             this.cboTipo.TabIndex = 1;
@@ -144,7 +146,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(28, 32);
+            this.label3.Location = new System.Drawing.Point(25, 32);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 16);
@@ -157,7 +159,7 @@
             this.txtEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEndereco.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEndereco.Location = new System.Drawing.Point(27, 46);
-            this.txtEndereco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(2);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(221, 23);
             this.txtEndereco.TabIndex = 7;
@@ -183,7 +185,7 @@
             this.txtN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtN.Location = new System.Drawing.Point(261, 46);
-            this.txtN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtN.Margin = new System.Windows.Forms.Padding(2);
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(68, 23);
             this.txtN.TabIndex = 8;
@@ -208,7 +210,7 @@
             this.txtComplemento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComplemento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComplemento.Location = new System.Drawing.Point(341, 46);
-            this.txtComplemento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtComplemento.Margin = new System.Windows.Forms.Padding(2);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(149, 23);
             this.txtComplemento.TabIndex = 9;
@@ -248,7 +250,7 @@
             this.txtBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBairro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Location = new System.Drawing.Point(27, 98);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(2);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(204, 23);
             this.txtBairro.TabIndex = 10;
@@ -274,7 +276,7 @@
             this.txtMunicipio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMunicipio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMunicipio.Location = new System.Drawing.Point(249, 98);
-            this.txtMunicipio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMunicipio.Margin = new System.Windows.Forms.Padding(2);
             this.txtMunicipio.Name = "txtMunicipio";
             this.txtMunicipio.Size = new System.Drawing.Size(241, 23);
             this.txtMunicipio.TabIndex = 11;
@@ -310,10 +312,12 @@
             // cboUf
             // 
             this.cboUf.BackColor = System.Drawing.Color.White;
+            this.cboUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboUf.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cboUf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboUf.FormattingEnabled = true;
             this.cboUf.Items.AddRange(new object[] {
+            "Selecione",
             "AC",
             "AL",
             "AP",
@@ -342,9 +346,9 @@
             "SE",
             "TO"});
             this.cboUf.Location = new System.Drawing.Point(201, 150);
-            this.cboUf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboUf.Margin = new System.Windows.Forms.Padding(2);
             this.cboUf.Name = "cboUf";
-            this.cboUf.Size = new System.Drawing.Size(79, 23);
+            this.cboUf.Size = new System.Drawing.Size(104, 23);
             this.cboUf.TabIndex = 13;
             this.cboUf.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -353,8 +357,8 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(135)))), ((int)(((byte)(217)))));
             this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(480, 458);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Location = new System.Drawing.Point(481, 471);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(117, 47);
             this.btnCadastrar.TabIndex = 15;
@@ -367,8 +371,8 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Silver;
             this.btnCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(611, 458);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(612, 471);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(117, 47);
             this.btnCancelar.TabIndex = 16;
@@ -404,10 +408,10 @@
             this.groupBox1.Controls.Add(this.cboTipo);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(63, 65);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(63, 77);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(797, 168);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -417,7 +421,7 @@
             // 
             this.mskCelular.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mskCelular.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCelular.Location = new System.Drawing.Point(224, 117);
+            this.mskCelular.Location = new System.Drawing.Point(221, 117);
             this.mskCelular.Mask = "(00) 00000-0000";
             this.mskCelular.Name = "mskCelular";
             this.mskCelular.Size = new System.Drawing.Size(143, 23);
@@ -427,7 +431,7 @@
             // 
             this.mskTelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mskTelefone.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTelefone.Location = new System.Drawing.Point(31, 117);
+            this.mskTelefone.Location = new System.Drawing.Point(28, 117);
             this.mskTelefone.Mask = "(00) 0000-0000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(143, 23);
@@ -438,11 +442,12 @@
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(417, 115);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(414, 115);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(361, 23);
             this.txtEmail.TabIndex = 6;
+            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             this.txtEmail.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
             // 
             // label14
@@ -451,7 +456,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(417, 98);
+            this.label14.Location = new System.Drawing.Point(414, 98);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(49, 16);
@@ -464,7 +469,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(224, 98);
+            this.label13.Location = new System.Drawing.Point(221, 98);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(55, 16);
@@ -477,7 +482,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(31, 98);
+            this.label12.Location = new System.Drawing.Point(28, 98);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 16);
@@ -503,10 +508,10 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(63, 244);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(63, 256);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(521, 190);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
@@ -527,10 +532,10 @@
             this.groupBox3.Controls.Add(this.txtObservacao);
             this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(596, 244);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(596, 256);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(263, 190);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
@@ -540,7 +545,7 @@
             // 
             this.txtObservacao.BackColor = System.Drawing.Color.White;
             this.txtObservacao.Location = new System.Drawing.Point(13, 34);
-            this.txtObservacao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtObservacao.Margin = new System.Windows.Forms.Padding(2);
             this.txtObservacao.Multiline = true;
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(234, 138);
@@ -552,7 +557,7 @@
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(67, 21);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 37);
             this.pictureBox2.TabIndex = 10;
@@ -563,8 +568,8 @@
             this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(51)))), ((int)(((byte)(50)))));
             this.btnExcluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(742, 458);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExcluir.Location = new System.Drawing.Point(743, 471);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(2);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(117, 47);
             this.btnExcluir.TabIndex = 15;
@@ -587,10 +592,11 @@
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnCadastrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formCadastroClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CADASTRO DE CLIENTES";
+            this.Load += new System.EventHandler(this.formCadastroClientes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

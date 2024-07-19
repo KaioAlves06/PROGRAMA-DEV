@@ -70,7 +70,7 @@ namespace Programa.Classes
                 MessageBox.Show("Erro ao cadastrar Cliente " + ex.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
+            
         }
 
 

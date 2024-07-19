@@ -46,9 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CadastrarAcessoUsuario.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\Conectarbanco.cs" />
-    <Compile Include="Classes\VerificarAcessos.cs" />
+    <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.Designer.cs">
+      <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\formCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,12 +68,24 @@
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Program.cs" />
+    <Compile Include="Formularios\formMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formMenuPrincipal.Designer.cs">
+      <DependentUpon>formMenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\formCadastrarNovoAcessoUsuario.resx">
+      <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formCadastroClientes.resx">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formMenuPrincipal.resx">
+      <DependentUpon>formMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

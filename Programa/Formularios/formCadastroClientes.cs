@@ -158,6 +158,24 @@ namespace Programa.Formularios
             {
                 MessageBox.Show("ERRO ao cadastrar Cliente: " + ex.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Limpar os campos após cadastrar
+            
+            cboTipo.SelectedIndex = 0;
+            txtNome.Text = "";
+            txtCpfeCnpj.Text = "";
+            mskTelefone.Text = "";
+            mskCelular.Text = "";
+            txtEmail.Text = "";
+            txtEndereco.Text = "";
+            txtN.Text = "";
+            txtComplemento.Text = "";
+            txtBairro.Text = "";
+            txtMunicipio.Text = "";
+            mskCep.Text = "";
+            cboUf.SelectedIndex = 0;
+            txtObservacao.Text = "";
+
         }
 
         private void txtCpfeCnpj_KeyPress(object sender, KeyPressEventArgs e)
@@ -179,6 +197,29 @@ namespace Programa.Formularios
         {
             txtEmail.BackColor = Color.White;
         }
-                
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja cancelar o Cadastro ? ", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cboTipo.SelectedIndex = 0;
+                txtNome.Text = "";
+                txtCpfeCnpj.Text = "";
+                mskTelefone.Text = "";
+                mskCelular.Text = "";
+                txtEmail.Text = "";
+                txtEndereco.Text = "";
+                txtN.Text = "";
+                txtComplemento.Text = "";
+                txtBairro.Text = "";
+                txtMunicipio.Text = "";
+                mskCep.Text = "";
+                cboUf.SelectedIndex = 0;
+                txtObservacao.Text = "";
+                return;
+
+
+            }
+        }
     }
 }

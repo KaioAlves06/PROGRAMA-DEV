@@ -40,5 +40,23 @@ namespace Programa.Formularios
             var abrir = new formTodosClientes();
             abrir.ShowDialog();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var abrir = new formTodosClientes();
+            abrir.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var abrir = new formCadastroClientes();
+            abrir.ShowDialog();
+        }
+
+        private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var abrir = new formCadastrarNovoAcessoUsuario();
+            abrir.ShowDialog();
+        }
     }
 }

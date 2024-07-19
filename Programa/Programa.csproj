@@ -74,6 +74,12 @@
     <Compile Include="Formularios\formMenuPrincipal.Designer.cs">
       <DependentUpon>formMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\formTodosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\formTodosClientes.Designer.cs">
+      <DependentUpon>formTodosClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\formCadastrarNovoAcessoUsuario.resx">
       <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formMenuPrincipal.resx">
       <DependentUpon>formMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\formTodosClientes.resx">
+      <DependentUpon>formTodosClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -28,5 +28,17 @@ namespace Programa.Formularios
             var abrir = new formCadastrarNovoAcessoUsuario();
             abrir.ShowDialog();
         }
+
+        private void cadastrarNovoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var abrir = new formCadastroClientes();
+            abrir.ShowDialog();
+        }
+
+        private void verTodosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var abrir = new formTodosClientes();
+            abrir.ShowDialog();
+        }
     }
 }

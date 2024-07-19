@@ -26,13 +26,14 @@ namespace Programa.Classes
                 {
                     cn.Open();
 
-                    var sql = @"insert into ACESSOS (USUARIO,SENHA)
-                                             VALUES (@USER,@SENHA)";
+                    var sql = @"insert into ACESSOS (USUARIO,SENHA,ATIVO)
+                                             VALUES (@USER,@SENHA,@ATIVO)";
 
                     using (SqlCommand cmd = new SqlCommand(sql, cn))
                     {
                         cmd.Parameters.AddWithValue("@USER", CAD.txtNomeUser.Text);
                         cmd.Parameters.AddWithValue("@SENHA", CAD.txtSenhaUser.Text);
+                        cmd.Parameters.AddWithValue("@ATIVO", "1");
 
                         cmd.ExecuteNonQuery();
 

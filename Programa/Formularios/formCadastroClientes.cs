@@ -102,33 +102,33 @@ namespace Programa.Formularios
                 MessageBox.Show("Informe se o cliente é: Pessoa Fisica ou Juridica", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (string.IsNullOrEmpty(txtNome.Text))
+            if (string.IsNullOrEmpty(txtNome.Text.Trim()))
             {
                 MessageBox.Show("Informe o nome do cliente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (txtCpfeCnpj.Text == "")
+            if (txtCpfeCnpj.Text.Trim() == "")
             {
                 MessageBox.Show("Informe o CPF ou CNPJ do cliente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (txtCpfeCnpj.Text.Length < 11)
+            if (txtCpfeCnpj.Text.Trim().Length < 11)
             {
                 MessageBox.Show("Para CPF informe os 11 digitos ou 14 digitos para CNPJ", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (mskTelefone.Text.Length < 14 && mskCelular.Text.Length < 15)
+            if (mskTelefone.Text.Trim().Length < 14 && mskCelular.Text.Trim().Length < 15)
             {
                 MessageBox.Show("Infome pelo menos 1 numero para contato ", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (txtEndereco.Text == "" || txtN.Text == "" || txtBairro.Text == "" || txtMunicipio.Text == "" || mskCep.Text.Length < 9 || cboUf.SelectedIndex == 0)
+            if (txtEndereco.Text.Trim() == "" || txtN.Text.Trim() == "" || txtBairro.Text.Trim() == "" || txtMunicipio.Text.Trim() == "" || mskCep.Text.Trim().Length < 9 || cboUf.SelectedIndex == 0)
             {
                 MessageBox.Show("Verifique os campos de endereços se estão devidamente preenchido", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (txtEmail.Text == "")
+            if (txtEmail.Text.Trim() == "")
             {
                 if (MessageBox.Show("Deseja informar o e-mail ? ", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -158,6 +158,24 @@ namespace Programa.Formularios
             {
                 MessageBox.Show("ERRO ao cadastrar Cliente: " + ex.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Limpar os campos após cadastrar
+            
+            cboTipo.SelectedIndex = 0;
+            txtNome.Text = "";
+            txtCpfeCnpj.Text = "";
+            mskTelefone.Text = "";
+            mskCelular.Text = "";
+            txtEmail.Text = "";
+            txtEndereco.Text = "";
+            txtN.Text = "";
+            txtComplemento.Text = "";
+            txtBairro.Text = "";
+            txtMunicipio.Text = "";
+            mskCep.Text = "";
+            cboUf.SelectedIndex = 0;
+            txtObservacao.Text = "";
+
         }
 
         private void txtCpfeCnpj_KeyPress(object sender, KeyPressEventArgs e)
@@ -178,6 +196,30 @@ namespace Programa.Formularios
         private void txtEmail_Click(object sender, EventArgs e)
         {
             txtEmail.BackColor = Color.White;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja cancelar o Cadastro ? ", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cboTipo.SelectedIndex = 0;
+                txtNome.Text = "";
+                txtCpfeCnpj.Text = "";
+                mskTelefone.Text = "";
+                mskCelular.Text = "";
+                txtEmail.Text = "";
+                txtEndereco.Text = "";
+                txtN.Text = "";
+                txtComplemento.Text = "";
+                txtBairro.Text = "";
+                txtMunicipio.Text = "";
+                mskCep.Text = "";
+                cboUf.SelectedIndex = 0;
+                txtObservacao.Text = "";
+                return;
+
+
+            }
         }
     }
 }

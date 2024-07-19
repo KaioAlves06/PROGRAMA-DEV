@@ -63,7 +63,22 @@ namespace Programa.Formularios
 
                 MessageBox.Show("Usuário cadastrado com sucesso!", "CADASTRADO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
+            // Limpar campos após cadastrar
+            txtNomeUser.Text = "";
+            txtSenhaUser.Text = "";
+            txtSenhaUser2.Text = "";
             
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja cancelar o Cadastro ? ","ALERTA",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                txtNomeUser.Text = "";
+                txtSenhaUser.Text = "";
+                txtSenhaUser2.Text = "";
+                return;
+            }
         }
     }
 }

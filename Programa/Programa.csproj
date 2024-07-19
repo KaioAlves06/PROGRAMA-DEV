@@ -49,7 +49,6 @@
     <Compile Include="Classes\CadastrarAcessoUsuario.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\Conectarbanco.cs" />
-    <Compile Include="Classes\VerificarAcessos.cs" />
     <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>

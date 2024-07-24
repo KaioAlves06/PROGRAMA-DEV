@@ -40,6 +40,7 @@ namespace Programa.Classes
                     using (SqlCommand cmd = new SqlCommand(sql, cn))
                     {
                         // Passando as tabelas e de onde ele irá substituir
+
                         cmd.Parameters.AddWithValue("@TIPO", CAD.cboTipo.Text);
                         cmd.Parameters.AddWithValue("@RAZAOSOCIAL", CAD.txtNome.Text);
                         cmd.Parameters.AddWithValue("@CNPJ", CAD.txtCpfeCnpj.Text);

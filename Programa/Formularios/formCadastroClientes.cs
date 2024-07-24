@@ -63,17 +63,7 @@ namespace Programa.Formularios
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
         {
 
         }

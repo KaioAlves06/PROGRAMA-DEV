@@ -58,5 +58,13 @@ namespace Programa.Formularios
             var abrir = new formCadastrarNovoAcessoUsuario();
             abrir.ShowDialog();
         }
+
+        private void realizarOrçamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var abrir = new formOrcamentos();
+            abrir.ShowDialog();
+
+            
+        }
     }
 }

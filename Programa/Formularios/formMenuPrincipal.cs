@@ -66,5 +66,15 @@ namespace Programa.Formularios
 
             
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

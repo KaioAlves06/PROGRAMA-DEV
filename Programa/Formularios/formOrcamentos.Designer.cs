@@ -63,6 +63,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnAddProduto = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtCodProduto = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -171,7 +173,7 @@
             "Fisica ",
             "Juridica"});
             this.cboTipo.Location = new System.Drawing.Point(742, 55);
-            this.cboTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.cboTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(167, 23);
             this.cboTipo.TabIndex = 9;
@@ -213,7 +215,7 @@
             "SE",
             "TO"});
             this.cboUf.Location = new System.Drawing.Point(802, 114);
-            this.cboUf.Margin = new System.Windows.Forms.Padding(2);
+            this.cboUf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboUf.Name = "cboUf";
             this.cboUf.Size = new System.Drawing.Size(104, 23);
             this.cboUf.TabIndex = 15;
@@ -238,7 +240,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(295, 114);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(65, 23);
             this.textBox4.TabIndex = 8;
@@ -250,7 +252,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(397, 114);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(188, 23);
             this.textBox2.TabIndex = 8;
@@ -262,7 +264,7 @@
             this.txtCpfCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCpfCnpj.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpfCnpj.Location = new System.Drawing.Point(18, 114);
-            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCpfCnpj.Name = "txtCpfCnpj";
             this.txtCpfCnpj.Size = new System.Drawing.Size(240, 23);
             this.txtCpfCnpj.TabIndex = 8;
@@ -274,7 +276,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(349, 55);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(230, 23);
             this.textBox3.TabIndex = 8;
@@ -300,7 +302,7 @@
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(109, 55);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(230, 23);
             this.txtNome.TabIndex = 8;
@@ -325,7 +327,7 @@
             this.txtCodCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodCliente.Location = new System.Drawing.Point(18, 55);
-            this.txtCodCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodCliente.Name = "txtCodCliente";
             this.txtCodCliente.Size = new System.Drawing.Size(81, 23);
             this.txtCodCliente.TabIndex = 8;
@@ -404,7 +406,7 @@
             this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBox1.Location = new System.Drawing.Point(37, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 23);
             this.textBox1.TabIndex = 8;
@@ -472,11 +474,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(37, 309);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(927, 262);
             this.dataGridView1.TabIndex = 11;
             // 
@@ -527,13 +530,12 @@
             this.btnAddProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAddProduto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProduto.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduto.Location = new System.Drawing.Point(37, 264);
+            this.btnAddProduto.Location = new System.Drawing.Point(132, 266);
             this.btnAddProduto.Name = "btnAddProduto";
             this.btnAddProduto.Size = new System.Drawing.Size(129, 29);
             this.btnAddProduto.TabIndex = 10;
             this.btnAddProduto.Text = "Add Produto";
             this.btnAddProduto.UseVisualStyleBackColor = false;
-            this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
             // pictureBox1
             // 
@@ -545,11 +547,35 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(40, 249);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(38, 16);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "COD";
+            // 
+            // txtCodProduto
+            // 
+            this.txtCodProduto.BackColor = System.Drawing.Color.White;
+            this.txtCodProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCodProduto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodProduto.Location = new System.Drawing.Point(40, 269);
+            this.txtCodProduto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodProduto.Name = "txtCodProduto";
+            this.txtCodProduto.Size = new System.Drawing.Size(81, 23);
+            this.txtCodProduto.TabIndex = 8;
+            // 
             // formOrcamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1007, 686);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
@@ -565,6 +591,8 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtCodProduto);
+            this.Controls.Add(this.label15);
             this.Name = "formOrcamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ORÇAMENTOS";
@@ -614,5 +642,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnAddProduto;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label15;
+        public System.Windows.Forms.TextBox txtCodProduto;
     }
 }

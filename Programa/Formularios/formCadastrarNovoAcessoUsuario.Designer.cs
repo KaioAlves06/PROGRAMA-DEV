@@ -46,10 +46,10 @@
             this.txtNomeUser.BackColor = System.Drawing.Color.White;
             this.txtNomeUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNomeUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeUser.Location = new System.Drawing.Point(24, 52);
-            this.txtNomeUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomeUser.Location = new System.Drawing.Point(32, 64);
+            this.txtNomeUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeUser.Name = "txtNomeUser";
-            this.txtNomeUser.Size = new System.Drawing.Size(128, 23);
+            this.txtNomeUser.Size = new System.Drawing.Size(170, 27);
             this.txtNomeUser.TabIndex = 0;
             // 
             // label1
@@ -58,10 +58,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(24, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(32, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Usuário";
             // 
@@ -71,10 +70,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(21, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(28, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
             // 
@@ -83,10 +81,10 @@
             this.txtSenhaUser.BackColor = System.Drawing.Color.White;
             this.txtSenhaUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenhaUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenhaUser.Location = new System.Drawing.Point(24, 117);
-            this.txtSenhaUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenhaUser.Location = new System.Drawing.Point(32, 144);
+            this.txtSenhaUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenhaUser.Name = "txtSenhaUser";
-            this.txtSenhaUser.Size = new System.Drawing.Size(128, 23);
+            this.txtSenhaUser.Size = new System.Drawing.Size(170, 27);
             this.txtSenhaUser.TabIndex = 1;
             this.txtSenhaUser.UseSystemPasswordChar = true;
             // 
@@ -96,10 +94,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(21, 164);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(28, 202);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 16);
+            this.label3.Size = new System.Drawing.Size(147, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Confirmar Senha";
             // 
@@ -108,10 +105,10 @@
             this.txtSenhaUser2.BackColor = System.Drawing.Color.White;
             this.txtSenhaUser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenhaUser2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenhaUser2.Location = new System.Drawing.Point(24, 182);
-            this.txtSenhaUser2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenhaUser2.Location = new System.Drawing.Point(32, 224);
+            this.txtSenhaUser2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenhaUser2.Name = "txtSenhaUser2";
-            this.txtSenhaUser2.Size = new System.Drawing.Size(128, 23);
+            this.txtSenhaUser2.Size = new System.Drawing.Size(170, 27);
             this.txtSenhaUser2.TabIndex = 2;
             this.txtSenhaUser2.UseSystemPasswordChar = true;
             // 
@@ -120,10 +117,10 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Silver;
             this.btnCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(209, 107);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelar.Location = new System.Drawing.Point(279, 132);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(129, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(172, 42);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -134,10 +131,10 @@
             this.btnCadastrarUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(135)))), ((int)(((byte)(217)))));
             this.btnCadastrarUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarUser.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarUser.Location = new System.Drawing.Point(209, 69);
-            this.btnCadastrarUser.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCadastrarUser.Location = new System.Drawing.Point(279, 85);
+            this.btnCadastrarUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadastrarUser.Name = "btnCadastrarUser";
-            this.btnCadastrarUser.Size = new System.Drawing.Size(129, 34);
+            this.btnCadastrarUser.Size = new System.Drawing.Size(172, 42);
             this.btnCadastrarUser.TabIndex = 3;
             this.btnCadastrarUser.Text = "CADASTRAR";
             this.btnCadastrarUser.UseVisualStyleBackColor = false;
@@ -147,18 +144,19 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(239, 164);
+            this.pictureBox1.Location = new System.Drawing.Point(319, 202);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(87, 80);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // formCadastrarNovoAcessoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(354, 241);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(472, 297);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCadastrarUser);
@@ -169,6 +167,7 @@
             this.Controls.Add(this.txtNomeUser);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "formCadastrarNovoAcessoUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

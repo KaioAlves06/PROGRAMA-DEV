@@ -173,7 +173,7 @@
             "Fisica ",
             "Juridica"});
             this.cboTipo.Location = new System.Drawing.Point(742, 55);
-            this.cboTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTipo.Margin = new System.Windows.Forms.Padding(2);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(167, 23);
             this.cboTipo.TabIndex = 9;
@@ -215,7 +215,7 @@
             "SE",
             "TO"});
             this.cboUf.Location = new System.Drawing.Point(802, 114);
-            this.cboUf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboUf.Margin = new System.Windows.Forms.Padding(2);
             this.cboUf.Name = "cboUf";
             this.cboUf.Size = new System.Drawing.Size(104, 23);
             this.cboUf.TabIndex = 15;
@@ -240,7 +240,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(295, 114);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(65, 23);
             this.textBox4.TabIndex = 8;
@@ -252,7 +252,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(397, 114);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(188, 23);
             this.textBox2.TabIndex = 8;
@@ -264,7 +264,7 @@
             this.txtCpfCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCpfCnpj.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpfCnpj.Location = new System.Drawing.Point(18, 114);
-            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(2);
             this.txtCpfCnpj.Name = "txtCpfCnpj";
             this.txtCpfCnpj.Size = new System.Drawing.Size(240, 23);
             this.txtCpfCnpj.TabIndex = 8;
@@ -276,7 +276,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(349, 55);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(230, 23);
             this.textBox3.TabIndex = 8;
@@ -302,7 +302,7 @@
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(109, 55);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(230, 23);
             this.txtNome.TabIndex = 8;
@@ -327,7 +327,7 @@
             this.txtCodCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodCliente.Location = new System.Drawing.Point(18, 55);
-            this.txtCodCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodCliente.Name = "txtCodCliente";
             this.txtCodCliente.Size = new System.Drawing.Size(81, 23);
             this.txtCodCliente.TabIndex = 8;
@@ -406,7 +406,7 @@
             this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBox1.Location = new System.Drawing.Point(37, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 23);
             this.textBox1.TabIndex = 8;
@@ -465,7 +465,7 @@
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalvar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(536, 615);
+            this.btnSalvar.Location = new System.Drawing.Point(535, 572);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(129, 39);
             this.btnSalvar.TabIndex = 10;
@@ -480,7 +480,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(37, 309);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(927, 262);
+            this.dataGridView1.Size = new System.Drawing.Size(927, 249);
             this.dataGridView1.TabIndex = 11;
             // 
             // btnCancelar
@@ -489,7 +489,7 @@
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(685, 615);
+            this.btnCancelar.Location = new System.Drawing.Point(684, 572);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(129, 39);
             this.btnCancelar.TabIndex = 10;
@@ -502,7 +502,7 @@
             this.btnGerarPedido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnGerarPedido.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerarPedido.ForeColor = System.Drawing.Color.White;
-            this.btnGerarPedido.Location = new System.Drawing.Point(834, 615);
+            this.btnGerarPedido.Location = new System.Drawing.Point(833, 572);
             this.btnGerarPedido.Name = "btnGerarPedido";
             this.btnGerarPedido.Size = new System.Drawing.Size(129, 39);
             this.btnGerarPedido.TabIndex = 10;
@@ -515,7 +515,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(129)))), ((int)(((byte)(237)))));
-            this.label14.Location = new System.Drawing.Point(37, 588);
+            this.label14.Location = new System.Drawing.Point(577, 277);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(239, 18);
@@ -576,7 +576,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(1007, 686);
+            this.ClientSize = new System.Drawing.Size(1007, 623);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCancelar);

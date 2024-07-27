@@ -48,21 +48,19 @@
             this.dataGridClientes.BackgroundColor = System.Drawing.Color.White;
             this.dataGridClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridClientes.Location = new System.Drawing.Point(16, 149);
-            this.dataGridClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridClientes.Location = new System.Drawing.Point(12, 121);
             this.dataGridClientes.Name = "dataGridClientes";
             this.dataGridClientes.RowHeadersWidth = 51;
-            this.dataGridClientes.Size = new System.Drawing.Size(1280, 459);
+            this.dataGridClientes.Size = new System.Drawing.Size(960, 373);
             this.dataGridClientes.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 630);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 512);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 53);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -76,11 +74,9 @@
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 14);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 11);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1279, 121);
+            this.groupBox1.Size = new System.Drawing.Size(959, 98);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PESQUISAR";
@@ -120,10 +116,10 @@
             "SP",
             "SE",
             "TO"});
-            this.cboUf.Location = new System.Drawing.Point(756, 59);
-            this.cboUf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboUf.Location = new System.Drawing.Point(567, 48);
+            this.cboUf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboUf.Name = "cboUf";
-            this.cboUf.Size = new System.Drawing.Size(169, 28);
+            this.cboUf.Size = new System.Drawing.Size(128, 23);
             this.cboUf.TabIndex = 15;
             this.cboUf.Tag = "";
             // 
@@ -133,9 +129,10 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(752, 37);
+            this.label10.Location = new System.Drawing.Point(564, 30);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 20);
+            this.label10.Size = new System.Drawing.Size(26, 16);
             this.label10.TabIndex = 14;
             this.label10.Text = "UF";
             // 
@@ -143,20 +140,18 @@
             // 
             this.txtCpfCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCpfCnpj.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpfCnpj.Location = new System.Drawing.Point(391, 63);
-            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCpfCnpj.Location = new System.Drawing.Point(293, 51);
             this.txtCpfCnpj.Name = "txtCpfCnpj";
-            this.txtCpfCnpj.Size = new System.Drawing.Size(303, 23);
+            this.txtCpfCnpj.Size = new System.Drawing.Size(228, 20);
             this.txtCpfCnpj.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(387, 41);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(290, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.Size = new System.Drawing.Size(80, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "CPF / CNPJ";
             // 
@@ -164,33 +159,30 @@
             // 
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(25, 63);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNome.Location = new System.Drawing.Point(19, 51);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(303, 23);
+            this.txtNome.Size = new System.Drawing.Size(228, 20);
             this.txtNome.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(16, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.Size = new System.Drawing.Size(47, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "NOME";
             // 
             // formTodosClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(1312, 710);
+            this.ClientSize = new System.Drawing.Size(987, 582);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridClientes);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formTodosClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CLIENTES";

@@ -49,17 +49,23 @@
     <Compile Include="Classes\CadastrarAcessoUsuario.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\Conectarbanco.cs" />
-    <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.cs">
+    <Compile Include="Formularios\CADASTRO\formCadastrarNovoAcessoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.Designer.cs">
+    <Compile Include="Formularios\CADASTRO\formCadastrarNovoAcessoUsuario.Designer.cs">
       <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\formCadastroClientes.cs">
+    <Compile Include="Formularios\CADASTRO\formCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formCadastroClientes.Designer.cs">
+    <Compile Include="Formularios\CADASTRO\formCadastroClientes.Designer.cs">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CADASTRO\formCadastroProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CADASTRO\formCadastroProdutos.Designer.cs">
+      <DependentUpon>formCadastroProdutos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\formLogin.cs">
       <SubType>Form</SubType>
@@ -74,24 +80,27 @@
     <Compile Include="Formularios\formMenuPrincipal.Designer.cs">
       <DependentUpon>formMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\formOrcamentos.cs">
+    <Compile Include="Formularios\VENDAS\formOrcamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formOrcamentos.Designer.cs">
+    <Compile Include="Formularios\VENDAS\formOrcamentos.Designer.cs">
       <DependentUpon>formOrcamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\formTodosClientes.cs">
+    <Compile Include="Formularios\VENDAS\formTodosClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formTodosClientes.Designer.cs">
+    <Compile Include="Formularios\VENDAS\formTodosClientes.Designer.cs">
       <DependentUpon>formTodosClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\formCadastrarNovoAcessoUsuario.resx">
+    <EmbeddedResource Include="Formularios\CADASTRO\formCadastrarNovoAcessoUsuario.resx">
       <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formCadastroClientes.resx">
+    <EmbeddedResource Include="Formularios\CADASTRO\formCadastroClientes.resx">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CADASTRO\formCadastroProdutos.resx">
+      <DependentUpon>formCadastroProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
@@ -99,10 +108,10 @@
     <EmbeddedResource Include="Formularios\formMenuPrincipal.resx">
       <DependentUpon>formMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formOrcamentos.resx">
+    <EmbeddedResource Include="Formularios\VENDAS\formOrcamentos.resx">
       <DependentUpon>formOrcamentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formTodosClientes.resx">
+    <EmbeddedResource Include="Formularios\VENDAS\formTodosClientes.resx">
       <DependentUpon>formTodosClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

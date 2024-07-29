@@ -51,7 +51,7 @@ namespace Programa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var abrir = new formMenuPrincipal();
+            var abrir = new formMenu();
             abrir.ShowDialog();
         }
     }

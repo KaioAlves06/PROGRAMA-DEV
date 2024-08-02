@@ -48,10 +48,17 @@ namespace Programa.Formularios
             }
         }
 
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             var abrir = new formCadastroClientes();
             abrir.ShowDialog();
         }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

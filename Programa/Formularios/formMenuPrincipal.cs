@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Programa.Formularios.CADASTRO;
 
 namespace Programa.Formularios
 {
@@ -75,6 +76,12 @@ namespace Programa.Formularios
         private void formMenuPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void produtosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var abrir = new formCadastroProdutos();
+            abrir.ShowDialog();
         }
     }
 }

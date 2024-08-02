@@ -32,8 +32,6 @@
             this.dataGridClientes = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cboUf = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.txtCpfCnpj = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -67,8 +65,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cboUf);
-            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtCpfCnpj);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtNome);
@@ -80,61 +76,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PESQUISAR";
-            // 
-            // cboUf
-            // 
-            this.cboUf.BackColor = System.Drawing.Color.White;
-            this.cboUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboUf.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cboUf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboUf.FormattingEnabled = true;
-            this.cboUf.Items.AddRange(new object[] {
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "DF",
-            "ES",
-            "GO",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SC",
-            "SP",
-            "SE",
-            "TO"});
-            this.cboUf.Location = new System.Drawing.Point(567, 48);
-            this.cboUf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cboUf.Name = "cboUf";
-            this.cboUf.Size = new System.Drawing.Size(128, 23);
-            this.cboUf.TabIndex = 15;
-            this.cboUf.Tag = "";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(564, 30);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 16);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "UF";
             // 
             // txtCpfCnpj
             // 
@@ -204,7 +145,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCpfCnpj;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.ComboBox cboUf;
-        private System.Windows.Forms.Label label10;
     }
 }

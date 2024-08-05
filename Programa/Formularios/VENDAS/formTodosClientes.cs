@@ -59,6 +59,12 @@ namespace Programa.Formularios
         {
 
         }
+
+        private void dataGridClientes_DoubleClick(object sender, EventArgs e)
+        {
+            var abrir = new formCadastroClientes();
+            abrir.ShowDialog();
+        }
     }
 }
 

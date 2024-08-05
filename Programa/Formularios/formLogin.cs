@@ -25,37 +25,35 @@ namespace Programa
             txtSenha.PasswordChar = '*';
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Testar se está conectando com o banco de dados
-                using (SqlConnection cn = new SqlConnection(Conectarbanco.Cn))
-                {
-                    cn.Open();
-                    MessageBox.Show("Sucesso ao se conectar com o banco", "TUDO OK");
-                }
-            }
-            // se não conectar, ex retornará o erro
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao entrar no banco " + ex.Message);
-            }
 
-        }
+
+
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+   
+
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
-            var abrir = new formMenuPrincipal();
-            abrir.ShowDialog();
+
+            var usuario = txtUsuario.Text.Trim();
+            var senha = txtSenha.Text.Trim();
+
+           if(usuario == "KAIO" && senha  == "1234")
+            {
+                var abrir = new formMenuPrincipal();
+                abrir.ShowDialog();
+               this.Close();
+            }
+           else
+            {
+                MessageBox.Show("Usuario ou senha estão incorretos","Sistema",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
+
+
         }
     }
-
-
 }
-

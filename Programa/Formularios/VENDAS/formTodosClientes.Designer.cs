@@ -51,6 +51,7 @@
             this.dataGridClientes.RowHeadersWidth = 51;
             this.dataGridClientes.Size = new System.Drawing.Size(960, 373);
             this.dataGridClientes.TabIndex = 0;
+            this.dataGridClientes.DoubleClick += new System.EventHandler(this.dataGridClientes_DoubleClick);
             // 
             // pictureBox1
             // 

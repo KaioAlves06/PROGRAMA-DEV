@@ -65,6 +65,11 @@ namespace Programa.Formularios
             var abrir = new formCadastroClientes();
             abrir.ShowDialog();
         }
+
+        private void dataGridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 

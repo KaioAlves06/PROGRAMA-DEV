@@ -38,10 +38,10 @@
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.cboUf = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtCpfCnpj = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtN = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtCpfouCnpj = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,13 +51,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNorcamento = new System.Windows.Forms.TextBox();
             this.mskDataOrcamento = new System.Windows.Forms.MaskedTextBox();
             this.mskDataValidade = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtOrcamento = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGerarPedido = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtCodProduto = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtOrcamento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,10 +80,10 @@
             this.groupBox1.Controls.Add(this.cboTipo);
             this.groupBox1.Controls.Add(this.cboUf);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.txtCpfCnpj);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtN);
+            this.groupBox1.Controls.Add(this.txtCidade);
+            this.groupBox1.Controls.Add(this.txtEndereco);
+            this.groupBox1.Controls.Add(this.txtCpfouCnpj);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label5);
@@ -234,53 +234,53 @@
             this.label10.Text = "UF";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textBox4
+            // txtN
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(295, 114);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(65, 23);
-            this.textBox4.TabIndex = 8;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtN.BackColor = System.Drawing.Color.White;
+            this.txtN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtN.Location = new System.Drawing.Point(295, 114);
+            this.txtN.Margin = new System.Windows.Forms.Padding(2);
+            this.txtN.Name = "txtN";
+            this.txtN.Size = new System.Drawing.Size(65, 23);
+            this.txtN.TabIndex = 8;
+            this.txtN.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox2
+            // txtCidade
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(397, 114);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 23);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtCidade.BackColor = System.Drawing.Color.White;
+            this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCidade.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Location = new System.Drawing.Point(397, 114);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(188, 23);
+            this.txtCidade.TabIndex = 8;
+            this.txtCidade.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // txtCpfCnpj
+            // txtEndereco
             // 
-            this.txtCpfCnpj.BackColor = System.Drawing.Color.White;
-            this.txtCpfCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCpfCnpj.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpfCnpj.Location = new System.Drawing.Point(18, 114);
-            this.txtCpfCnpj.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCpfCnpj.Name = "txtCpfCnpj";
-            this.txtCpfCnpj.Size = new System.Drawing.Size(240, 23);
-            this.txtCpfCnpj.TabIndex = 8;
-            this.txtCpfCnpj.TextChanged += new System.EventHandler(this.txtCpfCnpj_TextChanged);
+            this.txtEndereco.BackColor = System.Drawing.Color.White;
+            this.txtEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEndereco.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Location = new System.Drawing.Point(18, 114);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(240, 23);
+            this.txtEndereco.TabIndex = 8;
+            this.txtEndereco.TextChanged += new System.EventHandler(this.txtCpfCnpj_TextChanged);
             // 
-            // textBox3
+            // txtCpfouCnpj
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(349, 55);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(230, 23);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtCpfouCnpj.BackColor = System.Drawing.Color.White;
+            this.txtCpfouCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCpfouCnpj.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpfouCnpj.Location = new System.Drawing.Point(349, 55);
+            this.txtCpfouCnpj.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCpfouCnpj.Name = "txtCpfouCnpj";
+            this.txtCpfouCnpj.Size = new System.Drawing.Size(230, 23);
+            this.txtCpfouCnpj.TabIndex = 8;
+            this.txtCpfouCnpj.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label8
             // 
@@ -399,17 +399,17 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "N° Orçamento";
             // 
-            // textBox1
+            // txtNorcamento
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(37, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 23);
-            this.textBox1.TabIndex = 8;
+            this.txtNorcamento.BackColor = System.Drawing.Color.White;
+            this.txtNorcamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNorcamento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNorcamento.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtNorcamento.Location = new System.Drawing.Point(37, 36);
+            this.txtNorcamento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNorcamento.Name = "txtNorcamento";
+            this.txtNorcamento.Size = new System.Drawing.Size(121, 23);
+            this.txtNorcamento.TabIndex = 8;
             // 
             // mskDataOrcamento
             // 
@@ -472,16 +472,16 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dtOrcamento
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 309);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(927, 249);
-            this.dataGridView1.TabIndex = 11;
+            this.dtOrcamento.BackgroundColor = System.Drawing.Color.White;
+            this.dtOrcamento.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtOrcamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtOrcamento.Location = new System.Drawing.Point(37, 309);
+            this.dtOrcamento.Name = "dtOrcamento";
+            this.dtOrcamento.RowHeadersWidth = 51;
+            this.dtOrcamento.Size = new System.Drawing.Size(927, 249);
+            this.dtOrcamento.TabIndex = 11;
             // 
             // btnCancelar
             // 
@@ -536,6 +536,7 @@
             this.btnAddProduto.TabIndex = 10;
             this.btnAddProduto.Text = "Add Produto";
             this.btnAddProduto.UseVisualStyleBackColor = false;
+            this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
             // pictureBox1
             // 
@@ -578,7 +579,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1007, 623);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtOrcamento);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGerarPedido);
             this.Controls.Add(this.btnAddProduto);
@@ -586,7 +587,7 @@
             this.Controls.Add(this.mskDataValidade);
             this.Controls.Add(this.mskDataOrcamento);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNorcamento);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
@@ -599,7 +600,7 @@
             this.Load += new System.EventHandler(this.formOrcamentos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtOrcamento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -613,21 +614,21 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox txtCpfCnpj;
+        public System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtNorcamento;
+        public System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.ComboBox cboUf;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txtCpfouCnpj;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.ComboBox cboTipo;
         public System.Windows.Forms.MaskedTextBox mskCelular;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox txtN;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.MaskedTextBox mskCep;
         private System.Windows.Forms.Label label9;
@@ -636,7 +637,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtOrcamento;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGerarPedido;
         private System.Windows.Forms.Label label14;

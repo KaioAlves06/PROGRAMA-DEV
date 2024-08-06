@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Programa.Classes;
 
 namespace Programa.Formularios
 {
@@ -71,7 +73,7 @@ namespace Programa.Formularios
 
         private void mskDataOrcamento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-          
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -83,5 +85,50 @@ namespace Programa.Formularios
         {
 
         }
+
+        private void btnAddProduto_Click(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    using (SqlConnection cn = new SqlConnection(Conectarbanco.Cn))
+                    {
+                        cn.Open();
+
+                        // Usar uma consulta parametrizada para evitar SQL Injection
+                        var sql = "SELECT * FROM PRODUTOS WHERE ID = @ID";
+
+                        using (SqlCommand cmd = new SqlCommand(sql, cn))
+                        {
+                            // Adicionar o parâmetro com o valor do TextBox
+                            cmd.Parameters.AddWithValue("@ID", txtCodProduto.Text);
+
+                            using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                            {
+                                using (DataTable dt = new DataTable())
+                                {
+                                    da.Fill(dt);
+                                    dtOrcamento.DataSource = dt;
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao trazer consulta: " + ex.Message);
+                }
+            }
+
+        }
     }
 }
+
+
+
+
+
+
+
+
+

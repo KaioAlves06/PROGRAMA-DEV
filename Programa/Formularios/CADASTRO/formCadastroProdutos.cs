@@ -58,7 +58,7 @@ namespace Programa.Formularios.CADASTRO
                 MessageBox.Show("Informe o valor de Compra do Produto", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
-            if (txtMargem.Text.Trim() == "")
+            // if (txtMargem.Text.Trim() == "")
             {
                 MessageBox.Show("Informe a margem de Lucro", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
@@ -78,7 +78,7 @@ namespace Programa.Formularios.CADASTRO
                     var sql = @"Insert into PRODUTOS(COD_FORNECEDOR,FORNECEDOR,DESCRICAO,CATEGORIA,
                                 PRECO_COMPRA,MARGEM,PRECO_VENDA,ESTOQUE_MIN)
                                 VALUES (@CODFORN,@FORNECEDOR,@DESCRICAO,@CATEGORIA,@COMPRA,
-                                @MARGEM,@VENDA,@ESTOQUEM)";
+                                @VENDA,@ESTOQUEM)";
 
                     using (SqlCommand cmd = new SqlCommand(sql, cn))
                     {
@@ -87,7 +87,6 @@ namespace Programa.Formularios.CADASTRO
                         cmd.Parameters.AddWithValue("@DESCRICAO", txtDescricao.Text.Trim());
                         cmd.Parameters.AddWithValue("@CATEGORIA", cboCategoria.Text.Trim());
                         cmd.Parameters.AddWithValue("@COMPRA", mskPrecoCompra.Text.Trim());
-                        cmd.Parameters.AddWithValue("@MARGEM", txtMargem.Text.Trim());
                         cmd.Parameters.AddWithValue("@VENDA", mskPrecoVenda.Text.Trim());
                         cmd.Parameters.AddWithValue("@ESTOQUEM", txtEstoqueMin.Text.Trim());
 
@@ -96,7 +95,7 @@ namespace Programa.Formularios.CADASTRO
                         cn.Close();
 
                     }
-                    
+
 
                 }
 
@@ -107,8 +106,8 @@ namespace Programa.Formularios.CADASTRO
                 MessageBox.Show("Erro ao cadastrar Cliente " + ex.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-           
-            MessageBox.Show("Produto cadastrado com Sucesso","Sistema",MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show("Produto cadastrado com Sucesso", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Deixando os campos em branco após o cadastro
             txtCodFornecedor.Text = "";
@@ -116,12 +115,11 @@ namespace Programa.Formularios.CADASTRO
             txtDescricao.Text = "";
             cboCategoria.Text = "Selecione";
             mskPrecoCompra.Text = "";
-            txtMargem.Text = "";
             mskPrecoVenda.Text = "";
             txtEstoqueMin.Text = "";
 
 
-          
+
         }
     }
 }

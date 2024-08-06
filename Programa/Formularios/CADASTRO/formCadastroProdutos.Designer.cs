@@ -37,14 +37,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMargem = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtEstoqueMin = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.mskPrecoCompra = new System.Windows.Forms.TextBox();
             this.mskPrecoVenda = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtCodFornecedor
@@ -52,7 +54,7 @@
             this.txtCodFornecedor.BackColor = System.Drawing.Color.White;
             this.txtCodFornecedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodFornecedor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodFornecedor.Location = new System.Drawing.Point(11, 73);
+            this.txtCodFornecedor.Location = new System.Drawing.Point(216, 51);
             this.txtCodFornecedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodFornecedor.Name = "txtCodFornecedor";
             this.txtCodFornecedor.Size = new System.Drawing.Size(142, 23);
@@ -64,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(11, 54);
+            this.label1.Location = new System.Drawing.Point(216, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 16);
@@ -77,7 +79,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(185, 54);
+            this.label3.Location = new System.Drawing.Point(390, 32);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 16);
@@ -94,7 +96,7 @@
             "HONDA",
             "YAMAHA",
             "SUZUKI"});
-            this.cboFornecedor.Location = new System.Drawing.Point(188, 73);
+            this.cboFornecedor.Location = new System.Drawing.Point(393, 51);
             this.cboFornecedor.Margin = new System.Windows.Forms.Padding(2);
             this.cboFornecedor.Name = "cboFornecedor";
             this.cboFornecedor.Size = new System.Drawing.Size(167, 23);
@@ -107,7 +109,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(11, 108);
+            this.label4.Location = new System.Drawing.Point(216, 94);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 16);
@@ -119,10 +121,10 @@
             this.txtDescricao.BackColor = System.Drawing.Color.White;
             this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescricao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.Location = new System.Drawing.Point(11, 127);
+            this.txtDescricao.Location = new System.Drawing.Point(216, 113);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(362, 23);
+            this.txtDescricao.Size = new System.Drawing.Size(497, 23);
             this.txtDescricao.TabIndex = 2;
             // 
             // label5
@@ -131,7 +133,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(145, 163);
+            this.label5.Location = new System.Drawing.Point(216, 151);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 16);
@@ -150,7 +152,7 @@
             "Pneu",
             "Acessórios",
             "Relação"});
-            this.cboCategoria.Location = new System.Drawing.Point(11, 181);
+            this.cboCategoria.Location = new System.Drawing.Point(594, 51);
             this.cboCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(119, 23);
@@ -163,36 +165,12 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(11, 163);
+            this.label6.Location = new System.Drawing.Point(594, 33);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 16);
             this.label6.TabIndex = 7;
             this.label6.Text = "Categoria ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(284, 163);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 16);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Margem";
-            // 
-            // txtMargem
-            // 
-            this.txtMargem.BackColor = System.Drawing.Color.White;
-            this.txtMargem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMargem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMargem.Location = new System.Drawing.Point(284, 181);
-            this.txtMargem.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMargem.Name = "txtMargem";
-            this.txtMargem.Size = new System.Drawing.Size(89, 23);
-            this.txtMargem.TabIndex = 5;
             // 
             // label8
             // 
@@ -200,7 +178,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(11, 216);
+            this.label8.Location = new System.Drawing.Point(371, 150);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 16);
@@ -213,7 +191,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(145, 216);
+            this.label9.Location = new System.Drawing.Point(522, 150);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 16);
@@ -225,7 +203,7 @@
             this.txtEstoqueMin.BackColor = System.Drawing.Color.White;
             this.txtEstoqueMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEstoqueMin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstoqueMin.Location = new System.Drawing.Point(145, 235);
+            this.txtEstoqueMin.Location = new System.Drawing.Point(522, 169);
             this.txtEstoqueMin.Margin = new System.Windows.Forms.Padding(2);
             this.txtEstoqueMin.Name = "txtEstoqueMin";
             this.txtEstoqueMin.Size = new System.Drawing.Size(90, 23);
@@ -233,15 +211,15 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(135)))), ((int)(((byte)(217)))));
+            this.btnCadastrar.BackColor = System.Drawing.Color.White;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(256, 289);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Location = new System.Drawing.Point(23, 104);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(117, 47);
+            this.btnCadastrar.Size = new System.Drawing.Size(136, 33);
             this.btnCadastrar.TabIndex = 8;
-            this.btnCadastrar.Text = "CADASTRAR";
+            this.btnCadastrar.Text = "SALVAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
@@ -250,7 +228,7 @@
             this.mskPrecoCompra.BackColor = System.Drawing.Color.White;
             this.mskPrecoCompra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mskPrecoCompra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskPrecoCompra.Location = new System.Drawing.Point(148, 181);
+            this.mskPrecoCompra.Location = new System.Drawing.Point(216, 169);
             this.mskPrecoCompra.Margin = new System.Windows.Forms.Padding(2);
             this.mskPrecoCompra.Name = "mskPrecoCompra";
             this.mskPrecoCompra.Size = new System.Drawing.Size(121, 23);
@@ -261,26 +239,63 @@
             this.mskPrecoVenda.BackColor = System.Drawing.Color.White;
             this.mskPrecoVenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mskPrecoVenda.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskPrecoVenda.Location = new System.Drawing.Point(14, 235);
+            this.mskPrecoVenda.Location = new System.Drawing.Point(371, 169);
             this.mskPrecoVenda.Margin = new System.Windows.Forms.Padding(2);
             this.mskPrecoVenda.Name = "mskPrecoVenda";
             this.mskPrecoVenda.Size = new System.Drawing.Size(116, 23);
             this.mskPrecoVenda.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(134)))), ((int)(((byte)(217)))));
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnCadastrar);
+            this.panel1.Location = new System.Drawing.Point(4, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(186, 386);
+            this.panel1.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(23, 40);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 33);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "NOVO";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(23, 168);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 33);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "VER TODOS";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // formCadastroProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(384, 359);
-            this.Controls.Add(this.btnCadastrar);
+            this.ClientSize = new System.Drawing.Size(740, 391);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboCategoria);
             this.Controls.Add(this.cboFornecedor);
             this.Controls.Add(this.mskPrecoCompra);
-            this.Controls.Add(this.txtMargem);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.mskPrecoVenda);
             this.Controls.Add(this.txtEstoqueMin);
             this.Controls.Add(this.label9);
@@ -292,7 +307,8 @@
             this.Controls.Add(this.label1);
             this.Name = "formCadastroProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "formCadastroProdutos";
+            this.Text = "CADASTRAR PRODUTOS";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,13 +325,14 @@
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.ComboBox cboCategoria;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox txtMargem;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox txtEstoqueMin;
         private System.Windows.Forms.Button btnCadastrar;
         public System.Windows.Forms.TextBox mskPrecoCompra;
         public System.Windows.Forms.TextBox mskPrecoVenda;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

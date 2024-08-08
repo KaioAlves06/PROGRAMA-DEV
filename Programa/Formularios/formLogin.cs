@@ -31,6 +31,7 @@ namespace Programa
 
         private void btnSair_Click(object sender, EventArgs e)
         {
+           
             Application.Exit();
         }
 
@@ -44,15 +45,19 @@ namespace Programa
 
            if(usuario == "KAIO" && senha  == "1234")
             {
+                
                 var abrir = new formMenuPrincipal();
                 abrir.ShowDialog();
-               this.Close();
+                this.Close();
+                
+
             }
            else
             {
                 MessageBox.Show("Usuario ou senha estão incorretos","Sistema",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
 
+            
 
         }
     }

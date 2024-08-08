@@ -206,10 +206,18 @@ namespace Programa.Formularios
                 mskCep.Text = "";
                 cboUf.SelectedIndex = 0;
                 txtObservacao.Text = "";
-                return;
+                //return;
+                
+                this.Close();
 
 
             }
+        }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            var abrir = new formTodosClientes();
+            abrir.ShowDialog();
         }
     }
 }

@@ -121,5 +121,17 @@ namespace Programa.Formularios.CADASTRO
 
 
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            txtCodFornecedor.Text = "";
+            cboFornecedor.Text = "Selecione";
+            cboCategoria.Text = "Selecione";
+            txtDescricao.Text = "";
+            mskPrecoCompra.Text = "";
+            mskPrecoVenda.Text = "";
+            txtEstoqueMin.Text = "";
+
+        }
     }
 }

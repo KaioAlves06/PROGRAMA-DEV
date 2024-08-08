@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Programa.Formularios.CADASTRO;
+using Programa.Formularios.ESTOQUE;
 
 namespace Programa.Formularios
 {
@@ -111,6 +112,18 @@ namespace Programa.Formularios
         private void realizarOrçamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var abrir = new formOrcamentos();
+            abrir.ShowDialog();
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var abrir = new formCadastroFornecedor();
+            abrir.ShowDialog();
+        }
+
+        private void consultarProdutosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var abrir = new formConsultarProduto();
             abrir.ShowDialog();
         }
     }

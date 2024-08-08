@@ -61,11 +61,23 @@
     <Compile Include="Formularios\CADASTRO\formCadastroClientes.Designer.cs">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\CADASTRO\formCadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CADASTRO\formCadastroFornecedor.Designer.cs">
+      <DependentUpon>formCadastroFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\CADASTRO\formCadastroProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\CADASTRO\formCadastroProdutos.Designer.cs">
       <DependentUpon>formCadastroProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ESTOQUE\formConsultarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ESTOQUE\formConsultarProduto.Designer.cs">
+      <DependentUpon>formConsultarProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\formLogin.cs">
       <SubType>Form</SubType>
@@ -99,8 +111,14 @@
     <EmbeddedResource Include="Formularios\CADASTRO\formCadastroClientes.resx">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CADASTRO\formCadastroFornecedor.resx">
+      <DependentUpon>formCadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\CADASTRO\formCadastroProdutos.resx">
       <DependentUpon>formCadastroProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ESTOQUE\formConsultarProduto.resx">
+      <DependentUpon>formConsultarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>

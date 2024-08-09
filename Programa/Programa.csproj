@@ -49,51 +49,96 @@
     <Compile Include="Classes\CadastrarAcessoUsuario.cs" />
     <Compile Include="Classes\CadastrarClientes.cs" />
     <Compile Include="Classes\Conectarbanco.cs" />
-    <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.cs">
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastrarNovoAcessoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formCadastrarNovoAcessoUsuario.Designer.cs">
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastrarNovoAcessoUsuario.Designer.cs">
       <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\formCadastroClientes.cs">
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formCadastroClientes.Designer.cs">
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastroClientes.Designer.cs">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\formLogin.cs">
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastroFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formLogin.Designer.cs">
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastroFornecedor.Designer.cs">
+      <DependentUpon>formCadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastroProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\CADASTRO\formCadastroProdutos.Designer.cs">
+      <DependentUpon>formCadastroProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\ESTOQUE\formConsultarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\ESTOQUE\formConsultarProduto.Designer.cs">
+      <DependentUpon>formConsultarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FINANCEIRO\formContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FINANCEIRO\formContasPagar.Designer.cs">
+      <DependentUpon>formContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Program.cs" />
-    <Compile Include="Formularios\formMenuPrincipal.cs">
+    <Compile Include="FORMULARIOS\formMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formMenuPrincipal.Designer.cs">
+    <Compile Include="FORMULARIOS\formMenuPrincipal.Designer.cs">
       <DependentUpon>formMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\formTodosClientes.cs">
+    <Compile Include="FORMULARIOS\VENDAS\formOrcamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\formTodosClientes.Designer.cs">
+    <Compile Include="FORMULARIOS\VENDAS\formOrcamentos.Designer.cs">
+      <DependentUpon>formOrcamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\VENDAS\formTodosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\VENDAS\formTodosClientes.Designer.cs">
       <DependentUpon>formTodosClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\formCadastrarNovoAcessoUsuario.resx">
+    <EmbeddedResource Include="FORMULARIOS\CADASTRO\formCadastrarNovoAcessoUsuario.resx">
       <DependentUpon>formCadastrarNovoAcessoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formCadastroClientes.resx">
+    <EmbeddedResource Include="FORMULARIOS\CADASTRO\formCadastroClientes.resx">
       <DependentUpon>formCadastroClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formLogin.resx">
+    <EmbeddedResource Include="FORMULARIOS\CADASTRO\formCadastroFornecedor.resx">
+      <DependentUpon>formCadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\CADASTRO\formCadastroProdutos.resx">
+      <DependentUpon>formCadastroProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\ESTOQUE\formConsultarProduto.resx">
+      <DependentUpon>formConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FINANCEIRO\formContasPagar.resx">
+      <DependentUpon>formContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formMenuPrincipal.resx">
+    <EmbeddedResource Include="FORMULARIOS\formMenuPrincipal.resx">
       <DependentUpon>formMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\formTodosClientes.resx">
+    <EmbeddedResource Include="FORMULARIOS\VENDAS\formOrcamentos.resx">
+      <DependentUpon>formOrcamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\VENDAS\formTodosClientes.resx">
       <DependentUpon>formTodosClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -117,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FORMULARIOS\COMPRAS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -49,7 +49,7 @@
             this.txtNomeUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNomeUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeUser.Location = new System.Drawing.Point(233, 73);
-            this.txtNomeUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeUser.Name = "txtNomeUser";
             this.txtNomeUser.Size = new System.Drawing.Size(128, 23);
             this.txtNomeUser.TabIndex = 0;
@@ -86,7 +86,7 @@
             this.txtSenhaUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenhaUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenhaUser.Location = new System.Drawing.Point(233, 138);
-            this.txtSenhaUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenhaUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaUser.Name = "txtSenhaUser";
             this.txtSenhaUser.Size = new System.Drawing.Size(128, 23);
             this.txtSenhaUser.TabIndex = 1;
@@ -111,7 +111,7 @@
             this.txtSenhaUser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenhaUser2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenhaUser2.Location = new System.Drawing.Point(233, 203);
-            this.txtSenhaUser2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenhaUser2.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaUser2.Name = "txtSenhaUser2";
             this.txtSenhaUser2.Size = new System.Drawing.Size(128, 23);
             this.txtSenhaUser2.TabIndex = 2;
@@ -119,13 +119,13 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.White;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(29, 154);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(36, 145);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(129, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(117, 28);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -133,13 +133,13 @@
             // 
             // btnCadastrarUser
             // 
-            this.btnCadastrarUser.BackColor = System.Drawing.Color.White;
+            this.btnCadastrarUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.btnCadastrarUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarUser.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastrarUser.Location = new System.Drawing.Point(29, 107);
-            this.btnCadastrarUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrarUser.Location = new System.Drawing.Point(36, 109);
+            this.btnCadastrarUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrarUser.Name = "btnCadastrarUser";
-            this.btnCadastrarUser.Size = new System.Drawing.Size(129, 34);
+            this.btnCadastrarUser.Size = new System.Drawing.Size(117, 28);
             this.btnCadastrarUser.TabIndex = 3;
             this.btnCadastrarUser.Text = "CADASTRAR";
             this.btnCadastrarUser.UseVisualStyleBackColor = false;
@@ -147,7 +147,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(134)))), ((int)(((byte)(217)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnCadastrarUser);
             this.panel1.Controls.Add(this.btnCancelar);

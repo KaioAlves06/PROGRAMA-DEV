@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Programa.Formularios.CADASTRO;
 using Programa.Formularios.ESTOQUE;
+using Programa.FORMULARIOS.FINANCEIRO;
 
 namespace Programa.Formularios
 {
@@ -126,5 +127,19 @@ namespace Programa.Formularios
             var abrir = new formConsultarProduto();
             abrir.ShowDialog();
         }
+
+        private void lançarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var abrir = new formContasPagar();
+            abrir.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var fechar = new formMenuPrincipal();
+            fechar.Close();
+        }
+
+      
     }
 }
